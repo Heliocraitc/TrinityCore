@@ -25043,7 +25043,7 @@ void Player::LearnTalent(uint32 talentId, uint32 talentRank)
                                 spentPoints += (rank + 1);
 
     // not have required min points spent in talent tree
-    if (spentPoints < (talentInfo->Row * MAX_TALENT_RANK))
+    if (spentPoints < (talentInfo->Row * (MAX_TALENT_RANK - 4)))
         return;
 
     // spell not set in talent.dbc
